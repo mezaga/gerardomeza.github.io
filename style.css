@@ -1,1 +1,64 @@
+*{
+  
+}
 
+body {
+  font: Arial;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: lrem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5 rem;
+}
+
+header p {
+  margin: 0.5 rem 0 0;
+  font-style: italic;
+}
+
+main {
+  max-width: 800 px;
+  margin: 2 rem auto;
+  padding: 0 lrem;
+}
+
+.entrada {
+  background: #fff;
+  padding: 1.5 rem;
+  margin-bottom: 2 rem;
+  border-radius: 8 px;
+  box-shadow: 0 2 px 5 px rgba (0,0,0,0,1);
+}
+
+.entrada h2 {
+  color: #007bff;
+}
+
+.entrada .fecha {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9 rem;
+}
+
+.entrada a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.entrada a:hover {
+  text-decoration: underline;
+}
+
+fondo {
+  Background: blue;
+}

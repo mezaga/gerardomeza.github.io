@@ -20,9 +20,33 @@ header h1 {
   font-size: 2.5 rem;
 }
 
-header p {
+header h3 {
   margin: 0.5 rem 0 0;
   font-style: italic;
+}
+
+header nav {
+    background-color: #2382AF;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: #77C1E4;
 }
 
 main {

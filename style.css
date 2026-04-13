@@ -36,6 +36,7 @@ header nav ul {
 
 header nav ul li {
     float: center;
+    display: block;
 }
 
 header nav ul li a {

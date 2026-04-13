@@ -32,12 +32,12 @@ header nav .logo{
     position: relative;
     font-weight: bold;
     font-zise: 4.0 rem;
+    float: right;
 }
 header nav {
     position: fixed;
     background-color: #2382AF;
     overflow: hidden;
-    z-index:10;
 }
 
 header nav ul {
@@ -59,6 +59,13 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background: #77C1E4;
+}
+
+.menu-fixed{
+    position: fixed;
+    z-index:1000;
+    top:0;
+    width: 100%;
 }
 
 main {
@@ -95,6 +102,3 @@ main {
   text-decoration: underline;
 }
 
-fondo {
-  Background: blue;
-}

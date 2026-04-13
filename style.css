@@ -28,9 +28,18 @@ header h3 {
     font-style: italic;
 }
 
+header nav .logo{
+    position: relative;
+    font-weight: bold;
+    font-zise: 3.0 rem;
+}
 header nav {
+    position: fixed;
     background-color: #2382AF;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    z-index:10;
 }
 
 header nav ul {
@@ -42,10 +51,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-    padding: 10px 20px;
+    padding: 12px 22px;
     display: block;
     color: #fff;
     text-decoration: none;
+    font-family: Arial;
 }
 
 header nav ul li a:hover {

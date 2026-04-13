@@ -35,7 +35,6 @@ header nav .logo{
     float: right;
 }
 header nav {
-    position: fixed;
     background-color: #2382AF;
     overflow: hidden;
 }

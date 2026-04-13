@@ -89,6 +89,12 @@ main {
   font-size: 0.9 rem;
 }
 
+.entrada .sub {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9 rem;
+}
+
 .entrada a {
   color: #007bff;
   text-decoration: none;

@@ -4,10 +4,7 @@
 }
 
 body {
-  font: Arial;
-  line-height: 1.6;
   background-color: #0d0302;
-  color: #333;
 }
 
 header {
@@ -43,7 +40,7 @@ header nav ul {
 }
 
 header nav ul li {
-    float: left;
+    float: right;
 }
 
 header nav ul li a {
@@ -66,11 +63,33 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-main {
+section {
   max-width: 800 px;
   margin: 2 rem auto;
   padding: 0 lrem;
 }
+
+section h1{
+    color: #fff;
+    text-align: center;
+    font-zise: 32px;
+}
+
+.contenedor {
+    text-align: justify;
+    padding: 22px;
+}
+
+.contenedor h2{
+    color: #fff;
+}
+
+.contenedor .sub {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9 rem;
+}
+
 
 .entrada {
   padding: 1.5 rem;

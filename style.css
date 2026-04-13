@@ -25,11 +25,6 @@ header h3 {
     font-style: italic;
 }
 
-header nav .logo{
-    position: relative;
-    font-weight: bold;
-    font-zise: 4.0 rem;
-}
 header nav {
     background-color: #8f7150;
     overflow: hidden;
@@ -40,7 +35,7 @@ header nav ul {
 }
 
 header nav ul li {
-    float: right;
+    float: center;
 }
 
 header nav ul li a {

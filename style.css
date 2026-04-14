@@ -7,11 +7,25 @@ body {
   background-color: #0d0302;
 }
 
+main{
+    padding: 0 5rem;
+}
+
+/* CSS DEL HEADER DONDE ESTA LA FOTO Y LAS REDES SOCIALES */
+
 header {
   background: #333;
   background-image: linear-gradient(to top, #56311d 9%, #0d0302 67%);
   padding: lrem 0;
   text-align: center;
+}
+
+header img{
+    object-fit: cover;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
 }
 
 header h1 {
@@ -24,6 +38,8 @@ header h3 {
     margin: 0.5 rem 0 0;
     font-style: italic;
 }
+
+/* CSS DEL HEADER DONDE ESTA LA BARRA DE MENU */
 
 header nav {
     background-color: #8f7150;
@@ -44,7 +60,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-family: Arial;
-    font-zise: 2.5 rem;
+    font-size: 2.5 rem;
 }
 
 header nav ul li a:hover {
@@ -58,43 +74,146 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-section {
-  max-width: 800 px;
-  margin: 2 rem auto;
-  padding: 0 lrem;
+/* CSS DE LOS LINKEOS */
+
+#Publi:target{
+
+}
+
+/* CSS DE ABOUT */
+
+.perfil img{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-width: 4px;
+    border-style: solid;
+    border-image: #fff;
+}
+
+section{
+
 }
 
 section h1{
+    padding-top: 0;
     color: #fff;
     text-align: center;
-    font-zise: 52px;
+    font-size: 52px;
+    padding: 2.5rem 0; 
 }
 
-.contenedor {
+.contenedorp {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    color: #fff;
+}
+
+.texto{
+    flex: 1;
+}
+
+.contenedorp h2{
+    font-size: 40px;
+}
+
+.contenedorp .sub {
+    font-style: italic;
+    font-size: 24px;
+}
+
+.contenedorp p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.contenedor a{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* CSS DE GALERIA DE IMAGENES */
+
+.G-Cont {
+    width: 90%;
+    max-width: 1100px;
+    margin:  auto;
+    display: flex;
+    padding: 0;
+}
+
+.Column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.Column img{
+    width: 100%;
+    margin-top: 5px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.Column img:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+@media (max-width: 600px){
+    .Column{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .Column{
+        flex: 50%;
+    }
+}
+
+/* CSS DE PUBLICACIONES */
+
+.contenedorpu {
     text-align: justify;
     padding: 42px;
     color: #fff;
 }
 
 .contenedor h2{
-    font-zise: 48px;
+    font-size: 40px;
 }
 
 .contenedor .sub {
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .contenedor p{
     font-size: 16px;
 }
 
-.contenedor a{
+.contenedorpu a{
     color: #fff;
-    font-zise: 16px;
-    margin-botom: 20px;
+    font-size: 16px;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .entrada {
   padding: 1.5 rem;

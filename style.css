@@ -1,14 +1,20 @@
 *{
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   background-color: #0d0302;
+  justify-items: center;
+  font-family: Arial, sans-serif;
 }
 
 main{
     padding: 0 5rem;
+    padding-bottom: 2.5rem;
+    min-height: calc(100vh - 300px); /* Resta la altura del header */
+    height: 100%;
 }
 
 /* CSS DEL HEADER DONDE ESTA LA FOTO Y LAS REDES SOCIALES */
@@ -35,35 +41,36 @@ header h1 {
 
 header h3 {
     color: #FFF;
-    margin: 0.5 rem 0 0;
+    margin: 0.5rem 0 0;
     font-style: italic;
 }
 
 /* CSS DEL HEADER DONDE ESTA LA BARRA DE MENU */
 
-header nav {
+nav {
     background-color: #8f7150;
     overflow: hidden;
+    justify-items: center;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
 }
 
-header nav ul li {
-    float: left;
+nav ul li {
+    float: inline-start;
 }
 
-header nav ul li a {
+nav ul li a {
     padding: 12px 22px;
-    display: block;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     font-family: Arial;
     font-size: 2.5 rem;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     background: #9F8569;
 }
 
@@ -93,15 +100,13 @@ header nav ul li a:hover {
 }
 
 section{
-
+    color: #fff;
 }
 
 section h1{
-    padding-top: 0;
-    color: #fff;
     text-align: center;
     font-size: 52px;
-    padding: 2.5rem 0; 
+    padding: 2.5rem; 
 }
 
 .contenedorp {
@@ -147,6 +152,11 @@ section h1{
     margin:  auto;
     display: flex;
     padding: 0;
+    text-align: center;
+}
+
+.G-Cont h2{
+    padding: 2rem;
 }
 
 .Column {
@@ -173,6 +183,61 @@ section h1{
 
 @media (max-width: 800px){
     .Column{
+        flex: 50%;
+    }
+}
+
+/* CSS DE COLUMNAS DE AUDIO */
+
+.ColumnA {
+    flex: 25%;
+    padding: 1rem 20px;
+    margin-inline: 2rem;
+    width: 300px;
+}
+
+.Conaudio{
+    background: #333;
+    padding: 1rem 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 2rem 0;
+}
+
+.Conaudio audio {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Conaudio a {
+    padding: 15px;
+    margin: 1rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background: #2382AF;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+a:hover {
+    background: #77C1E4;
+}
+
+@media (max-width: 600px){
+    .ColumnA{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .ColumnA{
         flex: 50%;
     }
 }
@@ -204,7 +269,19 @@ section h1{
     text-decoration: none;
 }
 
+footer{
+    color: #fff;
+    height: 100%;
+    width: 1200px;
+    background-color: #8f7150;
+    justify-content: center;
+    align-items: center;
+}
 
+footer p{
+    padding: 50px 50px;
+    text-align: center;
+}
 
 
 
